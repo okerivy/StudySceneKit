@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FSCubeViewController">
             <connections>
+                <outlet property="cubeScnView" destination="fbo-wv-iA8" id="21r-bw-EKv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,16 +17,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gct-nv-zuQ">
-                    <rect key="frame" x="201" y="230" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbo-wv-iA8">
+                    <rect key="frame" x="10" y="120" width="394" height="473"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fbo-wv-iA8" secondAttribute="height" multiplier="1:1.2" id="Oyj-xu-UXf"/>
+                    </constraints>
+                </sceneKitView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-            <point key="canvasLocation" x="139" y="154"/>
+            <constraints>
+                <constraint firstItem="fbo-wv-iA8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="RxZ-zK-qOQ"/>
+                <constraint firstAttribute="trailing" secondItem="fbo-wv-iA8" secondAttribute="trailing" constant="10" id="Z87-lg-LCg"/>
+                <constraint firstItem="fbo-wv-iA8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="wGt-3Y-s23"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
         </view>
     </objects>
 </document>
