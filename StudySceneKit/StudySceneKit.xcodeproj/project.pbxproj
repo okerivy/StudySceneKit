@@ -16,6 +16,7 @@
 		0F9E0E7128BDB366004EAFE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E0E7028BDB366004EAFE1 /* main.m */; };
 		0F9E0E8028BDB628004EAFE1 /* FSCubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E0E7E28BDB628004EAFE1 /* FSCubeViewController.m */; };
 		0F9E0E8128BDB628004EAFE1 /* FSCubeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9E0E7F28BDB628004EAFE1 /* FSCubeViewController.xib */; };
+		0F9E0E8528BE1068004EAFE1 /* SCNGeometry+FSScnLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E0E8428BE1066004EAFE1 /* SCNGeometry+FSScnLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		0F9E0E7D28BDB628004EAFE1 /* FSCubeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCubeViewController.h; sourceTree = "<group>"; };
 		0F9E0E7E28BDB628004EAFE1 /* FSCubeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCubeViewController.m; sourceTree = "<group>"; };
 		0F9E0E7F28BDB628004EAFE1 /* FSCubeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSCubeViewController.xib; sourceTree = "<group>"; };
+		0F9E0E8328BE1066004EAFE1 /* SCNGeometry+FSScnLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCNGeometry+FSScnLine.h"; sourceTree = "<group>"; };
+		0F9E0E8428BE1066004EAFE1 /* SCNGeometry+FSScnLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCNGeometry+FSScnLine.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 		0F9E0E7728BDB5DD004EAFE1 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				0F9E0E8228BE1008004EAFE1 /* Category */,
 				0F9E0E7828BDB5DD004EAFE1 /* Cube */,
 			);
 			path = Feature;
@@ -130,6 +134,15 @@
 				0F9E0E7F28BDB628004EAFE1 /* FSCubeViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0F9E0E8228BE1008004EAFE1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E0E8328BE1066004EAFE1 /* SCNGeometry+FSScnLine.h */,
+				0F9E0E8428BE1066004EAFE1 /* SCNGeometry+FSScnLine.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +221,7 @@
 				0F9E0E8028BDB628004EAFE1 /* FSCubeViewController.m in Sources */,
 				0F9E0E6028BDB361004EAFE1 /* AppDelegate.m in Sources */,
 				0F9E0E7128BDB366004EAFE1 /* main.m in Sources */,
+				0F9E0E8528BE1068004EAFE1 /* SCNGeometry+FSScnLine.m in Sources */,
 				0F9E0E6328BDB361004EAFE1 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
